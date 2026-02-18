@@ -60,7 +60,7 @@ body {
   background-color: var(--white);
   border: 1px solid var(--gray-950);
   border-radius: 20px;
-  box-shadow: 10px 10px var(--gray-950);
+  box-shadow: var(--space-sm) var(--space-sm) var(--gray-950);
 }
 .card__image {
   display: block;
