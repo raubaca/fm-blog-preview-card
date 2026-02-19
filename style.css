@@ -55,11 +55,11 @@ body {
   display: grid;
   justify-items: start;
   gap: var(--space-md);
-  max-width: 384px;
+  max-width: 24rem;
   padding: var(--space);
   background-color: var(--white);
   border: 1px solid var(--gray-950);
-  border-radius: 20px;
+  border-radius: 1.25rem;
   box-shadow: var(--space-sm) var(--space-sm) var(--gray-950);
 }
 .card__image {
@@ -70,7 +70,7 @@ body {
   border-radius: var(--space-sm);
 }
 .card__category {
-  margin-top: var(--space-md);
+  margin-block-start: var(--space-md);
   padding: var(--space-xs) var(--space-md);
   font-size: var(--font-size-sm);
   background-color: var(--yellow);
@@ -90,7 +90,7 @@ body {
   display: flex;
   align-items: center;
   gap: var(--space-md);
-  margin-top: var(--space-md);
+  margin-block-start: var(--space-md);
   .userpic {
     width: 2rem;
     aspect-ratio: 1;
@@ -116,5 +116,12 @@ body {
   }
   .card__author .name {
     font-size: var(--font-size-sm);
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .card__title {
+    transition-duration: 0.001ms;
   }
 }
